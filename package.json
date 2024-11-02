@@ -1,6 +1,7 @@
 {
-    "name": "wasm-git",
+    "name": "wasm-git-browser",
     "version": "0.0.13",
+    "main": "lg2_async.js",
     "type": "module",
     "author": {
         "name": "Peter Salomonsen",
@@ -10,24 +11,8 @@
         "url": "https://github.com/petersalomonsen/wasm-git"
     },
     "files": [
-        "lg2.js",
-        "lg2.wasm",
         "lg2_async.js",
         "lg2_async.wasm",
         "README.md"
-    ],
-    "scripts": {
-        "test": "mocha test/**/*.spec.js",
-        "test-browser": "wtr test-browser/**/*.spec.js",
-        "test-browser-watch": "wtr test-browser/**/*.spec.js --watch",
-        "test-browser-async": "wtr test-browser-async/**/*.spec.js",
-        "patch-version": "npm --no-git-tag-version version patch"
-    },
-    "devDependencies": {
-        "@web/test-runner": "^0.18.2",
-        "@web/test-runner-playwright": "^0.11.0",
-        "cgi": "^0.3.1",
-        "chai": "^4.3.7",
-        "mocha": "^10.2.0"
-    }
+    ]
 }
