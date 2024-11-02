@@ -1,6 +1,6 @@
 {
     "name": "wasm-git-browser",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "main": "lg2_async.js",
     "type": "module",
     "author": {
