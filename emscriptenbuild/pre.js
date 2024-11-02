@@ -1,5 +1,5 @@
 Object.assign(Module, globalThis.wasmGitModuleOverrides);
-
+var XMLHttpRequest = Module.Http || window.XMLHttpRequest;
 if (!Module.print && !Module.printErr) {
     let capturedOutput = null;
     let capturedError = null;
